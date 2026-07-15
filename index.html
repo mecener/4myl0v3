@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mecener</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="sphere">
+				<img src="assets/ell.png" alt="">
+			</div>
+			<div class="loader hide">
+				<div class="loader__text text"></div>
+				<div class="loader__bundle"></div>
+			</div>
+			<div class="screen hide" id="s1">
+				<h4 class="anime">ТРЕБУЕТСЯ АПГРЕЙД</h4>
+				<h2 class="anime">Обнаружено превышение лимитов тарифа Premium</h2>
+				<div class="anime text">Наша система зафиксировала превышение метрик тарифа «Премиум»: чрезмерный уровень
+					флирта, слишком очевидная симпатия обеих сторон диалога и стабильные «доброе утро» вкупе со «спокойной
+					ночи».
+					<p>Чтобы сохранить доступ ко всем функциям подписки необходим переход на новый план.</p>
+				</div>
+				<button style="margin: 12px 0 0 0" id="b1">Перейти к подпискам</button>
+			</div>
+			<div class="screen hide" id="s2">
+				<h2>Уровни подписки</h2>
+				<div class="plans">
+					<div class="plans-card">
+						<h5 class="plans-card__name">Премиум</h5>
+						<div class="plans-card__description">Общение без обязательств. Хорошо работает.</div>
+						<div class="plans-card__badge">Текущий</div>
+						<button id="s2" disabled class="plans-card__button">Остаться на Плане</button>
+						<div class="plans-card__advantages">
+							<div class="plans-card__advantages-name">Доступно в этом плане</div>
+							<ul class="plans-card__advantages-container">
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Комплименты</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Поддержка 24/7</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Внимание и забота</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--minus">Право называть своим</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--minus">Определённость</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--minus">Кэшбек в виде поцелуев</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--minus">Оффициальный статус «моя»
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="plans-card plans-card--new">
+						<h5 class="plans-card__name">Особый статус</h5>
+						<div class="plans-card__description">Для тех, кто давно перерос «просто общение».</div>
+						<button id="b2" class="plans-card__button alt">Улучшить подписку</button>
+						<div class="plans-card__advantages">
+							<div class="plans-card__advantages-name">Доступно в этом плане</div>
+							<ul class="plans-card__advantages-container">
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Все плюсы Премиум</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Гарантия взаимности</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Бонусные объятия</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Право называть своим</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Определённость</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Кэшбек в виде поцелуев</li>
+								<li class="plans-card__advantages-item plans-card__advantages-item--plus">Оффициальный статус «моя»</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="screen hide" id="s3">
+				<h4 class="anime">РЕЗУЛЬТАТ АНАЛИЗА</h4>
+				<h2 class="anime">Метрики</h2>
+				<div class="metrics">
+					<div class="metric">
+						<div class="metric__label">Совместимость: <span class="compat">0%</span></div>
+						<div class="metric__bar">
+							<div id="ml1" class="metric__line _animate"></div>
+						</div>
+					</div>
+					<div class="metric">
+						<div class="metric__label">Взаимопонимание: <span class="compat2">0%</span></div>
+						<div class="metric__bar">
+							<div id="ml2" class="metric__line _animate"></div>
+						</div>
+					</div>
+					<div class="metric">
+						<div class="metric__label">Теплота в общении: <span class="compat3">0%</span></div>
+						<div class="metric__bar">
+							<div id="ml3" class="metric__line _animate"></div>
+						</div>
+					</div>
+					<div class="metric">
+						<div class="metric__label">Совпадение чувств</div>
+						<div class="metric__value" id="mv2">(!*"№?*(*</div>
+					</div>
+					<div class="metric">
+						<div class="metric__label">Уровень флирта</div>
+						<div class="metric__value" id="mv3">(!*"№?*(*</div>
+					</div>
+				</div>
+				<div class="result">
+					<div class="result_heading">Общий вердикт</div>
+					<div class="result_val" id="mv4">Идеальное соответствие</div>
+				</div>
+				<div class="res">
+					<div class="tac">Наша система рекомендует следующий шаг, готовы к нему перейти?</div>
+					<button class="alt" style="margin: 12px 0 0 0" id="b3">Да</button>
+				</div>
+			</div>
+			<div class="screen" id="s4">
+				<h2 class="anime">Заяка одобрена</h2>
+				<div class="anime text">
+					<p>Документы подготовлены и уже в пути, доставка займёт не более минуты.</p>
+					<p>Пожалуйста, оставайтесь на месте.</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>
